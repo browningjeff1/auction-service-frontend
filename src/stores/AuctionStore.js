@@ -20,7 +20,7 @@ class AuctionStore {
           Authorization: AuthStore.token,
         }
       });
-
+      console.log(result)
       this.auctions = result.data;
     } catch (error) {
       alert('Could not fetch auctions! Check console for more details.');
